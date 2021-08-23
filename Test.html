@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="icon" href="./more.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>CSS Testing</title>
+</head>
+<body>
+    <div class="crt_score">
+        <h3>Current Score</h3>
+        <table>
+            <tr class="crt_head">
+                <th></th>
+                <th>Silver</th>
+                <th></th>
+                <th></th>
+                <th>Gold</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td class="S1" id="s1">NA</td>
+                <td class="S2" id="s2">NA</td>
+                <td class="S3" id="s3">NA</td>
+                <td class="G1"></td>
+                <td class="G2" id="g2">NA</td>
+                <td class="G3"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="left_rail" id="id_lr">
+        <img src="./chevron_right_black_24dp.svg" class="arrowL" onclick="arrowR()">
+    </div>
+    <div class="right_rail" id="id_rr">
+        <img src="./chevron_left_black_24dp.svg" class="arrowR" onclick="arrowL()">
+    </div>
+    <div class="scoreboard" id="id_sb">
+        <h3 class="oc_head">Overall Score</h3>
+        <table>
+            <tr class="oc_names">
+                <th>Silver</th>
+                <th>Gold</th>
+                <th>Club</th>
+            </tr>
+            <tr class="oc_score">
+                <td class="s_score" id="s_point">NA</td>
+                <td class="g_score" id="g_point">NA</td>
+                <td class="c_score" id="c_point">NA</td>
+            </tr>
+        </table>
+    </div>
+    <div class="emt2">
+        
+    </div>
+    <div class="game_area" id="id_ga">
+        <div class="turn">
+            <h1 id="who's_turn">Silver's Turn 1</h1>
+        </div>
+        <div class="spin" onclick="Spin(), Play('C:\Users\NCS\Desktop\Code\C++ Codes/Budger.wav')">
+            <h2 class="Try" id="tt">Try</h2>
+            <!-- <input type="button" value="PLAY" onclick="play()"> -->
+        </div>
+        <div class="history">
+            <p class="past" id="past_win">
+                10100101010010101
+            </p>
+        </div>
+    </div>
+    <script src="./Test.js"></script>
+</body>
+</html>
